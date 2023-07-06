@@ -29,3 +29,11 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: la command
       run: tree
+      
+    - name: Download a Build Artifact
+    uses: actions/download-artifact@v2.1.1
+    with:
+      # Artifact name
+      name: warwas
+      # Destination path
+      path: ~/download/path
