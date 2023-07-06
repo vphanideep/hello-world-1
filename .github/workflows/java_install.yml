@@ -1,0 +1,22 @@
+name: Java and Maven Setup
+
+on:
+    push:
+      branches: [ "master" ]
+
+jobs:
+  setup:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Java and Maven
+        uses: actions/setup-java@v3
+        with:
+          java-version: 11
+          distribution: temurin
+          cache: maven
+
+      # ... add additional steps for your workflow
