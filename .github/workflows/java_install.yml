@@ -2,7 +2,7 @@ name: Java and Maven Setup
 
 on:
     push:
-      branches: [ "master" ]
+      branches: [ "phani" ]
 
 jobs:
   setup:
