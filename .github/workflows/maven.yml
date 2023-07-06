@@ -7,7 +7,7 @@ on:
 jobs:
   build:
 
-    runs-on: deepu
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v3
