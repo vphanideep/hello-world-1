@@ -36,4 +36,4 @@ jobs:
         # Artifact name
         name: warwas
         # Destination path
-        path: webapp/target/webapp.war
+        path: webapp/target
