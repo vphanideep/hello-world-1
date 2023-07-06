@@ -30,10 +30,8 @@ jobs:
     - name: la command
       run: tree
       
-    - name: Download a Build Artifact
+    - name: Download Artifact
       uses: actions/download-artifact@v2.1.1
       with:
-        # Artifact name
-        name: warwas
-        # Destination path
+        name: webapp
         path: webapp/target
